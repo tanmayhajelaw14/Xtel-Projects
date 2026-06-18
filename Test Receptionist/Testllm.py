@@ -2,6 +2,7 @@ from openai import OpenAI
 from dotenv import load_dotenv  
 import os
 
+
 load_dotenv()  # Load environment variables from .env file
 
 
@@ -31,7 +32,7 @@ while True:
     messages=[
 
         {"role":"system","content":system_prompt},
-        {"role":"user","content":"user_input"}
+        {"role":"user","content":user_input}
      ]
         ,
     max_tokens=100
