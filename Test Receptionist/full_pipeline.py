@@ -11,7 +11,9 @@ print("HF_TOKEN loaded:", os.getenv("HF_TOKEN"))
 
 model = whisper.load_model("base")
 
-result = model.transcribe("patient.wav")
+result = model.transcribe("patient.wav")    # here you can replace "patient.wav" with the path to your audio file. 
+                                            # Record with your own voice or use any audio file you want to transcribe. 
+                                            # but with .wav format.
 
 transcript = result["text"]
 
